@@ -6,7 +6,7 @@
 name: Back of the Napkin
 
 # Short bio or description (displayed in the header)
-description: Discussions about Security, Scaling, and Solution Building
+description: Reflections on Security, Scaling, and Solution Building
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/2715762?s=400&u=f8f53859b4b27647551f5acb79a9556421117ab4&v=4
@@ -19,11 +19,11 @@ avatar: https://avatars.githubusercontent.com/u/2715762?s=400&u=f8f53859b4b27647
 footer-links:
   dribbble:
   email: wayne.kirk.schmidt@gmail.com
-  facebook:
+  facebook: https://www.facebook.com/wayne.kirk.schmidt
   flickr:
   github: wayne-kirk-schmidt/github.io
   instagram:
-  linkedin: 
+  linkedin: https://www.linkedin.com/in/waynekirkschmidt/
   pinterest:
   rss: # just type anything here for a working RSS icon
   twitter: wayne_k_schmidt
@@ -41,7 +41,7 @@ google_analytics:
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url:
+url: https://sites.google.com/view/waynekirkschmidt/
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
