@@ -1,4 +1,3 @@
-# Wayne Schmidt
 ## Biography
 
 Meet Wayne Schmidt, an accomplished IT leader with a diverse background spanning the Finance, Fintech, Insurance, Automotive, and Security sectors. 
@@ -13,7 +12,7 @@ His university studies revolved around Physics as well as Fine Arts.
 
 Wayne's professional journey has been marked by a series of transformative roles, each one building upon the last to shape him into the leader he is today.
 
-At Morgan Stanley, Wayne worked on his first set of innovation projects, building Aegis and Arcadia, securing build platforms for Unix, Windows, and Network Devices. 
+At Morgan Stanley, Wayne worked on his first set of innovation projects, building Aegis and Arcadia, and securing build platforms for Unix, Windows, and Network Devices. 
 Expanding on that role, he created an automated testing framework for evaluating firewall setup, configuration, and traffic analysis. 
 
 From that, he tackled delivering the Production Perimeter, a machine learning platform that learns how to secure an environment using activity that it observes.
