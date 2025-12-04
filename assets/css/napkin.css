@@ -136,3 +136,44 @@ body {
 #sidebar::-webkit-scrollbar-thumb:hover {
   background: rgba(0,0,0,0.35);
 }
+
+/* ---------------------------------------------------
+   Sophisticated Footer
+--------------------------------------------------- */
+
+#footer {
+  margin-top: 4rem;
+  padding: 2rem 3rem 3rem 3rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  padding-top: 1rem;
+  line-height: 1.6;
+}
+
+.footer-link {
+  color: #444;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0.1rem;
+}
+
+.footer-link:hover {
+  color: #000;
+  border-bottom-color: #000;
+}
+
+.footer-sep {
+  margin: 0 0.4rem;
+  color: #999;
+}
+
+.footer-label {
+  color: #555;
+  font-weight: 400;
+}
+
