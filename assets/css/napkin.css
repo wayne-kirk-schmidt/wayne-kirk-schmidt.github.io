@@ -1,16 +1,19 @@
 /* ---------------------------------------------------
-   Washi Background
+   General Background
 --------------------------------------------------- */
 
-body {
+html, body {
   margin: 0;
   padding: 0;
-  background: 
-      url('../img/washi-bg.png') repeat,
-      #f7f4ef;  /* fallback tone */
-  background-size: 600px 600px; /* soft texture scale */
-}
+  height: 100%;
 
+  background-color: #faf7f2;
+  background-image: url("assets/img/washi-bg.png");
+  background-size: 600px;
+  background-repeat: repeat;
+
+  color: #000;
+}
 
 /* ---------------------------------------------------
    Layout Structure
