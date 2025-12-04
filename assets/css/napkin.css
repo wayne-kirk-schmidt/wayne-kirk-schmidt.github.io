@@ -9,8 +9,9 @@ html, body {
 
   background-color: #faf7f2;
   background-image: url("../img/washi-bg.png");
-  background-size: 600px;
-  background-repeat: repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   /* color: #000; */
   color: #2d2622;
