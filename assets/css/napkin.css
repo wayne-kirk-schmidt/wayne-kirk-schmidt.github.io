@@ -8,7 +8,7 @@ html, body {
   height: 100%;
 
   background-color: #faf7f2;
-  background-image: url("assets/img/washi-bg.png");
+  background-image: url("../img/washi-bg.png");
   background-size: 600px;
   background-repeat: repeat;
 
