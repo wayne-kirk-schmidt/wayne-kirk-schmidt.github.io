@@ -8,14 +8,13 @@ html, body {
   height: 100%;
 
   background-color: #faf7f2;
-  background-image: url("../img/washi-seamless.png");
+  background-image: url("../img/washi-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-
-  /* FIX: Remove fixed attachment — it blocks overlays */
   background-attachment: scroll;
 
   color: #2d2622;
+
 }
 
 /* ---------------------------------------------------
