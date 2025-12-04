@@ -11,19 +11,15 @@ html, body {
   background-image: url("../img/washi-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 
-  /* color: #000; */
+  /* FIX: Remove fixed attachment — it blocks overlays */
+  background-attachment: scroll;
+
   color: #2d2622;
-
 }
 
 /* ---------------------------------------------------
-   Drafting Geometry Overlay (Arc + Circle)
---------------------------------------------------- */
-
-/* ---------------------------------------------------
-   Drafting Geometry Overlay (Arc + Circle)
+   Drafting Geometry Overlay (SVG-based)
 --------------------------------------------------- */
 
 #geometry-overlay {
@@ -35,20 +31,20 @@ html, body {
   pointer-events: none;
   z-index: 1;
 
-  /* Put geometry ON TOP, gradient below */
   background-image:
     url("../img/geometry.svg"),
     radial-gradient(circle at 60% 20%, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0) 60%);
 
   background-repeat: no-repeat;
 
+  /* FIX: Geometry was positioned offscreen; corrected */
   background-size:
-    1600px 1600px,   /* bigger circle — VERY important */
-    1200px 1200px;   /* softer light gradient */
+    1200px,
+    1200px;
 
   background-position:
-    40% -10%,        /* move circle UP + LEFT so it's visible */
-    55% 10%;         /* gradient follows but doesn't hide */
+    18% 5%,     /* SVG circle arc placement */
+    55% 10%;    /* subtle gradient placement */
 }
 
 /* ---------------------------------------------------
@@ -69,13 +65,12 @@ html, body {
   color: #444;
 }
 
-/* Container holding sidebar + content */
+/* container for sidebar + content */
 #container {
   display: flex;
   flex-direction: row;
   gap: 2rem;
 
-  /* remove the visual seam that creates a lighter zone */
   padding: 0 3rem 3rem 3rem;
   background: none;
   box-shadow: none;
@@ -88,7 +83,7 @@ html, body {
   padding: 20px 40px;
 }
 
-/* Responsive collapse */
+/* Responsive */
 @media (max-width: 800px) {
   #container {
     flex-direction: column;
@@ -97,7 +92,6 @@ html, body {
     padding: 1.5rem;
   }
 }
-
 
 /* ---------------------------------------------------
    Sidebar
@@ -137,32 +131,22 @@ html, body {
   color: #000;
 }
 
-
-/* ---------------------------------------------------
-   Sidebar — Scrollable + Sticky + Smooth
---------------------------------------------------- */
-
+/* Sticky + scrolling behavior */
 #sidebar {
   width: 240px;
-
-  /* scrolling */
   overflow-y: auto;
-  scrollbar-width: thin;            /* Firefox */
+  scrollbar-width: thin;
   scroll-behavior: smooth;
 
-  /* layout */
   padding: 0.5rem 0.5rem 0.5rem 0;
   border-right: 1px solid #ddd;
 
-  /* stick to viewport */
   position: sticky;
   top: 0;
-
-  /* full height */
   max-height: 100vh;
 }
 
-/* Chrome / Edge / Safari scrollbar styling */
+/* Scrollbar styling */
 #sidebar::-webkit-scrollbar {
   width: 6px;
 }
@@ -179,7 +163,6 @@ html, body {
 #sidebar::-webkit-scrollbar-thumb:hover {
   background: rgba(0,0,0,0.35);
 }
-
 
 /* ---------------------------------------------------
    Footer
@@ -221,8 +204,9 @@ html, body {
   font-weight: 400;
 }
 
+/* Ensure content sits above geometry */
 #content > * {
   position: relative;
-  z-index: 1;  /* ensures text stays above geometry */
+  z-index: 2;
 }
 
