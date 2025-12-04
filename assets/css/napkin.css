@@ -95,3 +95,44 @@ body {
   color: #000;
 }
 
+/* ---------------------------------------------------
+   Sidebar — Scrollable + Sticky + Smooth
+--------------------------------------------------- */
+
+#sidebar {
+  width: 240px;
+
+  /* scrolling */
+  overflow-y: auto;
+  scrollbar-width: thin;            /* Firefox */
+  scroll-behavior: smooth;
+
+  /* layout */
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  border-right: 1px solid #ddd;
+
+  /* stick to viewport */
+  position: sticky;
+  top: 0;
+
+  /* full height */
+  max-height: 100vh;
+}
+
+/* Chrome / Edge / Safari scrollbar styling */
+#sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+  background: rgba(0,0,0,0.25);
+  border-radius: 3px;
+}
+
+#sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(0,0,0,0.35);
+}
