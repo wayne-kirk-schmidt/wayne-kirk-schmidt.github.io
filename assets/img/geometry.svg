@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="2000" height="2000" viewBox="0 0 2000 2000" xmlns="http://www.w3.org/2000/svg">
 
-  <!-- Large faint circle -->
+  <!-- Large drafting circle (more visible) -->
   <circle
     cx="1000"
     cy="1000"
@@ -9,20 +9,20 @@
     stroke="#b8a894"
     stroke-width="3"
     fill="none"
-    opacity="0.08"
+    opacity="0.14"
   />
 
-  <!-- Partial drafting arc -->
+  <!-- Partial drafting arc (darker) -->
   <path
     d="M 1000 100
        A 900 900 0 0 1 1900 1000"
     stroke="#b8a894"
     stroke-width="3"
     fill="none"
-    opacity="0.10"
+    opacity="0.16"
   />
 
-  <!-- Inner faint circle -->
+  <!-- Inner drafting circle (slightly more visible) -->
   <circle
     cx="1000"
     cy="1000"
@@ -30,7 +30,7 @@
     stroke="#b8a894"
     stroke-width="2"
     fill="none"
-    opacity="0.05"
+    opacity="0.10"
   />
 
 </svg>
