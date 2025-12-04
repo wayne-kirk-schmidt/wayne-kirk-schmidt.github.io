@@ -18,6 +18,34 @@ html, body {
 }
 
 /* ---------------------------------------------------
+   Drafting Geometry Overlay (Arc + Circle)
+--------------------------------------------------- */
+
+#geometry-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+
+  background-image:
+    url("../img/geometry.svg"), /* your arc */
+    radial-gradient(circle at 70% 30%, rgba(0,0,0,0.10), transparent 60%); /* circle */
+
+  background-repeat: no-repeat;
+
+  background-size:
+    1200px 1200px,  /* arc size */
+    800px 800px;    /* circle size */
+
+  background-position:
+    70% 10%,        /* arc */
+    65% 20%;        /* circle */
+}
+
+/* ---------------------------------------------------
    Layout Structure
 --------------------------------------------------- */
 
@@ -184,34 +212,6 @@ html, body {
 .footer-label {
   color: #555;
   font-weight: 400;
-}
-
-/* ---------------------------------------------------
-   Principia Geometry Overlay on Content Panel
---------------------------------------------------- */
-
-#content {
-  position: relative;   /* enables the pseudo-element overlay */
-  background: transparent;
-}
-
-#content::before {
-  content: "";
-  position: absolute;
-  top: -200px;
-  left: -200px;
-  width: 1400px;
-  height: 1400px;
-
-  /* large faint arc */
-  border: 1px solid rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-
-  /* only show a subtle arc, not full circle */
-  clip-path: inset(0 50% 50% 0);
-
-  /* allow content to appear above it */
-  z-index: 0;
 }
 
 #content > * {
