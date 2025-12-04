@@ -21,28 +21,33 @@ html, body {
    Drafting Geometry Overlay (Arc + Circle)
 --------------------------------------------------- */
 
+/* ---------------------------------------------------
+   Drafting Geometry Overlay (Arc + Circle)
+--------------------------------------------------- */
+
 #geometry-overlay {
   position: fixed;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
   pointer-events: none;
+  z-index: 1;
 
+  /* Put geometry ON TOP, gradient below */
   background-image:
     url("../img/geometry.svg"),
-    radial-gradient(circle at 72% 28%, rgba(0,0,0,0.16), rgba(0,0,0,0) 70%);
+    radial-gradient(circle at 60% 20%, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0) 60%);
 
   background-repeat: no-repeat;
 
   background-size:
-    1200px 1200px,
-    950px 950px;
+    1600px 1600px,   /* bigger circle — VERY important */
+    1200px 1200px;   /* softer light gradient */
 
   background-position:
-    70% 8%,
-    68% 18%;
+    40% -10%,        /* move circle UP + LEFT so it's visible */
+    55% 10%;         /* gradient follows but doesn't hide */
 }
 
 /* ---------------------------------------------------
