@@ -67,18 +67,19 @@ html, body {
 #container {
   display: flex;
   flex-direction: row;
-  padding: 1rem 3rem 4rem 3rem;
   gap: 2rem;
+
+  /* remove the visual seam that creates a lighter zone */
+  padding: 0 3rem 3rem 3rem;
+  background: none;
+  box-shadow: none;
+  border: none;
 }
 
 /* Content pane */
 #content {
-  flex: 1;
-  background: rgba(255, 255, 255, 0.55);
-  backdrop-filter: blur(2px);
-  padding: 2rem 3rem;
-  border-radius: 8px;
-  max-width: 900px;
+  background: none;
+  padding: 20px 40px;
 }
 
 /* Responsive collapse */
