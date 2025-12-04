@@ -181,3 +181,36 @@ body {
   font-weight: 400;
 }
 
+/* ---------------------------------------------------
+   Principia Geometry Overlay on Content Panel
+--------------------------------------------------- */
+
+#content {
+  position: relative;   /* enables the pseudo-element overlay */
+  background: transparent;
+}
+
+#content::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 1400px;
+  height: 1400px;
+
+  /* large faint arc */
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+
+  /* only show a subtle arc, not full circle */
+  clip-path: inset(0 50% 50% 0);
+
+  /* allow content to appear above it */
+  z-index: 0;
+}
+
+#content > * {
+  position: relative;
+  z-index: 1;  /* ensures text stays above geometry */
+}
+
