@@ -31,18 +31,18 @@ html, body {
   pointer-events: none;
 
   background-image:
-    url("../img/geometry.svg"), /* your arc */
-    radial-gradient(circle at 70% 30%, rgba(0,0,0,0.10), transparent 60%); /* circle */
+    url("../img/geometry.svg"),
+    radial-gradient(circle at 72% 28%, rgba(0,0,0,0.16), rgba(0,0,0,0) 70%);
 
   background-repeat: no-repeat;
 
   background-size:
-    1200px 1200px,  /* arc size */
-    800px 800px;    /* circle size */
+    1200px 1200px,
+    950px 950px;
 
   background-position:
-    70% 10%,        /* arc */
-    65% 20%;        /* circle */
+    70% 8%,
+    68% 18%;
 }
 
 /* ---------------------------------------------------
