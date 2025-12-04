@@ -1,1 +1,12 @@
-/* placeholder */
+/* ---------------------------------------------------
+   Washi Background
+--------------------------------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background: 
+      url('../img/washi-bg.png') repeat,
+      #f7f4ef;  /* fallback tone */
+  background-size: 600px 600px; /* soft texture scale */
+}
