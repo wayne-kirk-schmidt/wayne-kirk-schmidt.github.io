@@ -2,4 +2,4 @@
 #
 umask 022
 mv posts/posts.json posts/posts.json.backup
-python3 build.python.txt
+python3 build.python.py
