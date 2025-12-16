@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bin/env bash
 #
 umask 022
 mv posts/posts.json posts/posts.json.backup
